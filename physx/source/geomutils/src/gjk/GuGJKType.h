@@ -149,7 +149,7 @@ namespace Gu
 			return getConvex<Convex>().supportRelative(dir, mAToB, mAToBTransposed, index);
 		}
 
-		virtual Ps::aos::Vec3V getCenter() const { return mAToB.transform(getConvex<Convex>().getCenter()); }
+		virtual const Ps::aos::Vec3V getCenter() const { return mAToB.transform(getConvex<Convex>().getCenter()); }
 
 		PX_FORCE_INLINE Ps::aos::PsMatTransformV& getRelativeTransform(){ return mAToB; }
 
